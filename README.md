@@ -4,5 +4,5 @@
 - Run _xmllint --format output.xml_ : To reorganize the XML file into the correct format."
 - Add the feature model to observe that the model is Void.
 
-  **Second Part (Constraint Traçability)** : The purpose of this section is to pass our generated file to the FeatureIDE solver to interpret the traceability of constraints and, consequently, determine which goal can be achieved or not."
+  **Second Part (Constraint Tracability)** : The purpose of this section is to pass our generated file to the FeatureIDE solver to interpret the traceability of constraints and, consequently, determine which goal can be achieved or not."
   
