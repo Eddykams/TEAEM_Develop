@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+  <struct>
+    <and mandatory="true" name="Root">
+      <graphics key="collapsed" value="false"/>
+      <alt mandatory="true" name="FeatureA">
+        <feature name="FeatureB"/>
+        <feature name="FeatureC"/>
+      </alt>
+      <and mandatory="true" name="GoalA">
+        <feature mandatory="true" name="GoalB"/>
+        <feature mandatory="true" name="GoalC"/>
+      </and>
+    </and>
+  </struct>
+  <constraints>
+    <rule>
+      <imp>
+        <var>GoalB</var>
+        <var>FeatureB</var>
+      </imp>
+    </rule>
+    <rule>
+      <imp>
+        <var>GoalC</var>
+        <var>FeatureC</var>
+      </imp>
+    </rule>
+  </constraints>
+</featureModel>

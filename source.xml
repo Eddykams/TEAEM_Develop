@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <goals name="GoalA" type="OR" >  
+            <goal name="GoalB" />
+            <goal name="GoalC" /> 
+    </goals>
+
+    <mapping>   
+            <goal name="GoalA" mappedFeature="FeatureA"></goal>
+            <goal name="GoalB" mappedFeature="FeatureB"></goal>
+            <goal name="GoalC" mappedFeature="FeatureC"></goal>
+    </mapping>
+
+<featureModel>
+	<struct>
+		<alt mandatory="true" name="FeatureA">
+			<feature name="FeatureB"/>
+			<feature name="FeatureC"/>
+		</alt>
+	</struct>
+</featureModel>
+</configuration>
