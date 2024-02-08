@@ -1,0 +1,259 @@
+{"hasRedundantConstraints":false,"hasFalseOptionalConstraints":false,"hasDeadFeatures":true,"hasDeadConstraints":false,"hasUnsatisfiableConstraints":false,"hasDeadFeature":false,"featureModelElementsProperties":{"GoalA":["DEAD","MANDATORY"],"GoalB":["DEAD","MANDATORY"],"Root":["DEAD","MANDATORY"],"FeatureC":["DEAD"],"FeatureB":["DEAD"],"FeatureA":["DEAD","GROUP"],"GoalC":["DEAD","MANDATORY"]},"deadFeatureExplanation":{"AffectedConstraints":{"value":"[AConstraint [propNode\u003dGoalB \u003d\u003e FeatureB], AConstraint [propNode\u003dGoalC \u003d\u003e FeatureC]]"},"AffectedElements":{"value":"[GoalA, FeatureB, FeatureC, GoalB, GoalC, AConstraint [propNode\u003dGoalB \u003d\u003e FeatureB], AConstraint [propNode\u003dGoalC \u003d\u003e FeatureC], Root]"},"ReasonCounts":{"value":"{FeatureModelReason[Root \u003d\u003e GoalA]\u003d1, FeatureModelReason[-(FeatureB \u0026 FeatureC)]\u003d1, FeatureModelReason[GoalA \u003d\u003e GoalB]\u003d1, FeatureModelReason[GoalA \u003d\u003e GoalC]\u003d1, FeatureModelReason[GoalB \u003d\u003e FeatureB]\u003d1, FeatureModelReason[GoalC \u003d\u003e FeatureC]\u003d1}"},"AffectedFeatures":{"value":"[GoalA, FeatureB, FeatureC, GoalB, GoalC, Root]"},"ReasonCount":{"value":"6"},"ExplanationCount":{"value":"1"},"Reasons":{"value":"[FeatureModelReason[Root \u003d\u003e GoalA], FeatureModelReason[-(FeatureB \u0026 FeatureC)], FeatureModelReason[GoalA \u003d\u003e GoalB], FeatureModelReason[GoalA \u003d\u003e GoalC], FeatureModelReason[GoalB \u003d\u003e FeatureB], FeatureModelReason[GoalC \u003d\u003e FeatureC]]"},"Class":{"value":"class de.ovgu.featureide.fm.core.explanations.fm.DeadFeatureExplanation"},"Implication":{"value":"-Root"},"Writer":{"Symbols":[{},{},{},{},{},{},{},{},{}],"ReasonsString":"\n• GoalA is a mandatory child of Root (i.e., Root ⇒ GoalA).\n• FeatureB and FeatureC are alternatives (i.e., ¬(FeatureB ∧ FeatureC)).\n• GoalB is a mandatory child of GoalA (i.e., GoalA ⇒ GoalB).\n• GoalC is a mandatory child of GoalA (i.e., GoalA ⇒ GoalC).\n• GoalB ⇒ FeatureB is a constraint.\n• GoalC ⇒ FeatureC is a constraint.","HeaderString":"The feature model is void because:","String":"The feature model is void because:\n• GoalA is a mandatory child of Root (i.e., Root ⇒ GoalA).\n• FeatureB and FeatureC are alternatives (i.e., ¬(FeatureB ∧ FeatureC)).\n• GoalB is a mandatory child of GoalA (i.e., GoalA ⇒ GoalB).\n• GoalC is a mandatory child of GoalA (i.e., GoalA ⇒ GoalC).\n• GoalB ⇒ FeatureB is a constraint.\n• GoalC ⇒ FeatureC is a constraint.","CircumstanceString":"The feature model is void"},"Subject":{"Structure":{"FirstChild":{"FirstChild":{"Class":{"value":"class de.ovgu.featureide.fm.core.base.impl.FeatureStructure"},"RelevantConstraints":{"value":"[AConstraint [propNode\u003dGoalB \u003d\u003e FeatureB]]"},"Feature":{"InternalId":{"value":"2"},"Property":{"DisplayName":"FeatureB"},"Name":"FeatureB"},"ChildrenCount":{"value":"0"}},"LastChild":{"RelevantConstraints":{"value":"[AConstraint [propNode\u003dGoalC \u003d\u003e FeatureC]]"},"Feature":{"InternalId":{"value":"3"},"Property":{"DisplayName":"FeatureC"},"Name":"FeatureC"}},"Children":{"value":"[FeatureStructure\u003d(FeatureB, mandatory\u003dfalse), FeatureStructure\u003d(FeatureC, mandatory\u003dfalse)]"},"Feature":{"InternalId":{"value":"1"},"Class":{"value":"class de.ovgu.featureide.fm.core.base.impl.Feature"},"Property":{"DisplayName":"FeatureA","Class":{"value":"class de.ovgu.featureide.fm.core.base.impl.FeatureProperty"}},"FeatureModel":{"FeatureTable":{"value":"{Root\u003dRoot, FeatureA\u003dFeatureA, FeatureB\u003dFeatureB, FeatureC\u003dFeatureC, GoalA\u003dGoalA, GoalB\u003dGoalB, GoalC\u003dGoalC}"},"NextElementId":{"value":"9"},"FeatureOrderList":{"value":"[Root, FeatureA, FeatureB, FeatureC, GoalA, GoalB, GoalC]"},"ConstraintCount":{"value":"2"},"NumberOfFeatures":{"value":"7"},"FactoryID":"de.ovgu.featureide.fm.core.DefaultFeatureModelFactory","Constraints":{"value":"[AConstraint [propNode\u003dGoalB \u003d\u003e FeatureB], AConstraint [propNode\u003dGoalC \u003d\u003e FeatureC]]"},"RenamingsManager":{"OldFeatureNames":{"value":"[GoalA, GoalB, Root, FeatureC, FeatureB, FeatureA, GoalC]"},"Class":{"value":"class de.ovgu.featureide.fm.core.RenamingsManager"}},"Features":{"value":"[Root, FeatureA, FeatureB, FeatureC, GoalA, GoalB, GoalC]"},"VisibleFeatures":{"value":"[Root, FeatureA, FeatureB, FeatureC, GoalA, GoalB, GoalC]"},"Class":{"value":"class de.ovgu.featureide.fm.core.base.impl.FeatureModel"},"Id":{"value":"0"},"Structure":{"FeaturesPreorder":{"value":"[Root, FeatureA, FeatureB, FeatureC, GoalA, GoalB, GoalC]"},"Class":{"value":"class de.ovgu.featureide.fm.core.base.impl.FeatureModelStructure"}},"Property":{"Class":{"value":"class de.ovgu.featureide.fm.core.base.impl.FeatureModelProperty"}}},"CustomProperties":{"Properties":{"value":"[]"}},"Name":"FeatureA"}},"Or":{"value":"false"},"LastChild":{"FirstChild":{"Feature":{"InternalId":{"value":"5"},"Property":{"DisplayName":"GoalB"},"Name":"GoalB"}},"LastChild":{"Feature":{"InternalId":{"value":"6"},"Property":{"DisplayName":"GoalC"},"Name":"GoalC"}},"Children":{"value":"[FeatureStructure\u003d(GoalB, mandatory\u003dtrue), FeatureStructure\u003d(GoalC, mandatory\u003dtrue)]"},"Feature":{"InternalId":{"value":"4"},"Property":{"DisplayName":"GoalA"},"Name":"GoalA"}},"Children":{"value":"[FeatureStructure\u003d(FeatureA, mandatory\u003dtrue  alt[FeatureB, mandatory\u003dfalse, FeatureC, mandatory\u003dfalse]), FeatureStructure\u003d(GoalA, mandatory\u003dtrue  and[GoalB, mandatory\u003dtrue, GoalC, mandatory\u003dtrue])]"},"RelevantConstraints":{"value":"[]"}},"Property":{"DisplayName":"Root"},"CustomProperties":{"Class":{"value":"class de.ovgu.featureide.fm.core.base.impl.MapPropertyContainer"},"Properties":{"value":"[Entry [key\u003dcollapsed, type\u003dgraphics, value\u003dfalse]]"}},"Name":"Root"}},"hasFalseOptionalFeatures":false,"hasVoidModelConstraints":true,"hasIndeterminateHiddenFeatures":false}{
+    "hasRedundantConstraints": false,
+    "hasFalseOptionalConstraints": false,
+    "hasDeadFeatures": true,
+    "hasDeadConstraints": false,
+    "hasUnsatisfiableConstraints": false,
+    "hasDeadFeature": false,
+    "featureModelElementsProperties": {
+        "GoalA": [
+            "DEAD",
+            "MANDATORY"
+        ],
+        "GoalB": [
+            "DEAD",
+            "MANDATORY"
+        ],
+        "Root": [
+            "DEAD",
+            "MANDATORY"
+        ],
+        "FeatureC": [
+            "DEAD"
+        ],
+        "FeatureB": [
+            "DEAD"
+        ],
+        "FeatureA": [
+            "DEAD",
+            "GROUP"
+        ],
+        "GoalC": [
+            "DEAD",
+            "MANDATORY"
+        ]
+    },
+    "deadFeatureExplanation": {
+        "AffectedConstraints": {
+            "value": "[AConstraint [propNode=GoalB => FeatureB], AConstraint [propNode=GoalC => FeatureC]]"
+        },
+        "AffectedElements": {
+            "value": "[GoalA, FeatureB, FeatureC, GoalB, GoalC, AConstraint [propNode=GoalB => FeatureB], AConstraint [propNode=GoalC => FeatureC], Root]"
+        },
+        "ReasonCounts": {
+            "value": "{FeatureModelReason[Root => GoalA]=1, FeatureModelReason[-(FeatureB & FeatureC)]=1, FeatureModelReason[GoalA => GoalB]=1, FeatureModelReason[GoalA => GoalC]=1, FeatureModelReason[GoalB => FeatureB]=1, FeatureModelReason[GoalC => FeatureC]=1}"
+        },
+        "AffectedFeatures": {
+            "value": "[GoalA, FeatureB, FeatureC, GoalB, GoalC, Root]"
+        },
+        "ReasonCount": {
+            "value": "6"
+        },
+        "ExplanationCount": {
+            "value": "1"
+        },
+        "Reasons": {
+            "value": "[FeatureModelReason[Root => GoalA], FeatureModelReason[-(FeatureB & FeatureC)], FeatureModelReason[GoalA => GoalB], FeatureModelReason[GoalA => GoalC], FeatureModelReason[GoalB => FeatureB], FeatureModelReason[GoalC => FeatureC]]"
+        },
+        "Class": {
+            "value": "class de.ovgu.featureide.fm.core.explanations.fm.DeadFeatureExplanation"
+        },
+        "Implication": {
+            "value": "-Root"
+        },
+        "Writer": {
+            "Symbols": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+            ],
+            "ReasonsString": "\n\u2022 GoalA is a mandatory child of Root (i.e., Root \u21d2 GoalA).\n\u2022 FeatureB and FeatureC are alternatives (i.e., \u00ac(FeatureB \u2227 FeatureC)).\n\u2022 GoalB is a mandatory child of GoalA (i.e., GoalA \u21d2 GoalB).\n\u2022 GoalC is a mandatory child of GoalA (i.e., GoalA \u21d2 GoalC).\n\u2022 GoalB \u21d2 FeatureB is a constraint.\n\u2022 GoalC \u21d2 FeatureC is a constraint.",
+            "HeaderString": "The feature model is void because:",
+            "String": "The feature model is void because:\n\u2022 GoalA is a mandatory child of Root (i.e., Root \u21d2 GoalA).\n\u2022 FeatureB and FeatureC are alternatives (i.e., \u00ac(FeatureB \u2227 FeatureC)).\n\u2022 GoalB is a mandatory child of GoalA (i.e., GoalA \u21d2 GoalB).\n\u2022 GoalC is a mandatory child of GoalA (i.e., GoalA \u21d2 GoalC).\n\u2022 GoalB \u21d2 FeatureB is a constraint.\n\u2022 GoalC \u21d2 FeatureC is a constraint.",
+            "CircumstanceString": "The feature model is void"
+        },
+        "Subject": {
+            "Structure": {
+                "FirstChild": {
+                    "FirstChild": {
+                        "Class": {
+                            "value": "class de.ovgu.featureide.fm.core.base.impl.FeatureStructure"
+                        },
+                        "RelevantConstraints": {
+                            "value": "[AConstraint [propNode=GoalB => FeatureB]]"
+                        },
+                        "Feature": {
+                            "InternalId": {
+                                "value": "2"
+                            },
+                            "Property": {
+                                "DisplayName": "FeatureB"
+                            },
+                            "Name": "FeatureB"
+                        },
+                        "ChildrenCount": {
+                            "value": "0"
+                        }
+                    },
+                    "LastChild": {
+                        "RelevantConstraints": {
+                            "value": "[AConstraint [propNode=GoalC => FeatureC]]"
+                        },
+                        "Feature": {
+                            "InternalId": {
+                                "value": "3"
+                            },
+                            "Property": {
+                                "DisplayName": "FeatureC"
+                            },
+                            "Name": "FeatureC"
+                        }
+                    },
+                    "Children": {
+                        "value": "[FeatureStructure=(FeatureB, mandatory=false), FeatureStructure=(FeatureC, mandatory=false)]"
+                    },
+                    "Feature": {
+                        "InternalId": {
+                            "value": "1"
+                        },
+                        "Class": {
+                            "value": "class de.ovgu.featureide.fm.core.base.impl.Feature"
+                        },
+                        "Property": {
+                            "DisplayName": "FeatureA",
+                            "Class": {
+                                "value": "class de.ovgu.featureide.fm.core.base.impl.FeatureProperty"
+                            }
+                        },
+                        "FeatureModel": {
+                            "FeatureTable": {
+                                "value": "{Root=Root, FeatureA=FeatureA, FeatureB=FeatureB, FeatureC=FeatureC, GoalA=GoalA, GoalB=GoalB, GoalC=GoalC}"
+                            },
+                            "NextElementId": {
+                                "value": "9"
+                            },
+                            "FeatureOrderList": {
+                                "value": "[Root, FeatureA, FeatureB, FeatureC, GoalA, GoalB, GoalC]"
+                            },
+                            "ConstraintCount": {
+                                "value": "2"
+                            },
+                            "NumberOfFeatures": {
+                                "value": "7"
+                            },
+                            "FactoryID": "de.ovgu.featureide.fm.core.DefaultFeatureModelFactory",
+                            "Constraints": {
+                                "value": "[AConstraint [propNode=GoalB => FeatureB], AConstraint [propNode=GoalC => FeatureC]]"
+                            },
+                            "RenamingsManager": {
+                                "OldFeatureNames": {
+                                    "value": "[GoalA, GoalB, Root, FeatureC, FeatureB, FeatureA, GoalC]"
+                                },
+                                "Class": {
+                                    "value": "class de.ovgu.featureide.fm.core.RenamingsManager"
+                                }
+                            },
+                            "Features": {
+                                "value": "[Root, FeatureA, FeatureB, FeatureC, GoalA, GoalB, GoalC]"
+                            },
+                            "VisibleFeatures": {
+                                "value": "[Root, FeatureA, FeatureB, FeatureC, GoalA, GoalB, GoalC]"
+                            },
+                            "Class": {
+                                "value": "class de.ovgu.featureide.fm.core.base.impl.FeatureModel"
+                            },
+                            "Id": {
+                                "value": "0"
+                            },
+                            "Structure": {
+                                "FeaturesPreorder": {
+                                    "value": "[Root, FeatureA, FeatureB, FeatureC, GoalA, GoalB, GoalC]"
+                                },
+                                "Class": {
+                                    "value": "class de.ovgu.featureide.fm.core.base.impl.FeatureModelStructure"
+                                }
+                            },
+                            "Property": {
+                                "Class": {
+                                    "value": "class de.ovgu.featureide.fm.core.base.impl.FeatureModelProperty"
+                                }
+                            }
+                        },
+                        "CustomProperties": {
+                            "Properties": {
+                                "value": "[]"
+                            }
+                        },
+                        "Name": "FeatureA"
+                    }
+                },
+                "Or": {
+                    "value": "false"
+                },
+                "LastChild": {
+                    "FirstChild": {
+                        "Feature": {
+                            "InternalId": {
+                                "value": "5"
+                            },
+                            "Property": {
+                                "DisplayName": "GoalB"
+                            },
+                            "Name": "GoalB"
+                        }
+                    },
+                    "LastChild": {
+                        "Feature": {
+                            "InternalId": {
+                                "value": "6"
+                            },
+                            "Property": {
+                                "DisplayName": "GoalC"
+                            },
+                            "Name": "GoalC"
+                        }
+                    },
+                    "Children": {
+                        "value": "[FeatureStructure=(GoalB, mandatory=true), FeatureStructure=(GoalC, mandatory=true)]"
+                    },
+                    "Feature": {
+                        "InternalId": {
+                            "value": "4"
+                        },
+                        "Property": {
+                            "DisplayName": "GoalA"
+                        },
+                        "Name": "GoalA"
+                    }
+                },
+                "Children": {
+                    "value": "[FeatureStructure=(FeatureA, mandatory=true  alt[FeatureB, mandatory=false, FeatureC, mandatory=false]), FeatureStructure=(GoalA, mandatory=true  and[GoalB, mandatory=true, GoalC, mandatory=true])]"
+                },
+                "RelevantConstraints": {
+                    "value": "[]"
+                }
+            },
+            "Property": {
+                "DisplayName": "Root"
+            },
+            "CustomProperties": {
+                "Class": {
+                    "value": "class de.ovgu.featureide.fm.core.base.impl.MapPropertyContainer"
+                },
+                "Properties": {
+                    "value": "[Entry [key=collapsed, type=graphics, value=false]]"
+                }
+            },
+            "Name": "Root"
+        }
+    },
+    "hasFalseOptionalFeatures": false,
+    "hasVoidModelConstraints": true,
+    "hasIndeterminateHiddenFeatures": false
+}
