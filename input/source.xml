@@ -18,5 +18,20 @@
 			<feature name="FeatureC"/>
 		</alt>
 	</struct>
+        <constraints>
+		<rule>
+			<description>We Link goalB and FeatureB.</description>
+			<imp>
+				<var>GoalB</var>
+				<var>FeatureB</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>GoalC</var>
+				<var>FeatureC</var>
+			</imp>
+		</rule>
+	</constraints>
 </featureModel>
 </configuration>

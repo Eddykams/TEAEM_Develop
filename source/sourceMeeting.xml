@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <goals name="HaveAGoodTime" type="AND" >  
+            <goal name="Invite Alice" />
+            <goal name="Invite Bob" />
+            <goal name="Invite Charlie" />
+    </goals>
+
+    <mapping>   
+            <goal name="Invite Alice" mappedFeature="Vegan"></goal>
+            <goal name="Invite Bob" mappedFeature="Proteins"></goal>
+            <goal name="Invite Charlie" mappedFeature="Proteins"></goal>
+    </mapping>
+    
+    <featureModel>
+	<struct>
+		<and abstract="true" mandatory="true" name="Root">
+			<and mandatory="true" name="Nutrients">
+				<feature name="Proteins"/>
+			</and>
+			<alt mandatory="true" name="Food Preparation">
+				<alt name="Vegan">
+					<feature name="Dahl"/>
+					<feature name="Salade"/>
+				</alt>
+				<and name="Carné">
+					<feature mandatory="true" name="Couscous"/>
+				</and>
+			</alt>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>Dahl</var>
+				<var>Proteins</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>Carné</var>
+				<var>Proteins</var>
+			</imp>
+		</rule>
+	</constraints>
+</featureModel>
+    </configuration>
+
