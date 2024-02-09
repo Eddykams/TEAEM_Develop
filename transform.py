@@ -63,7 +63,7 @@ def transform_source_to_target(source_path, target_path):
     ###############
         ############ PARCOURIR LES CONTRAINTES ET DEFINIR LES REGLES
             ########################
-    var_values = extract_var_values('input/test.xml')
+    var_values = extract_var_values('input/sourceGoodTime.xml')
     result = []
     print(var_values)  
 
@@ -83,12 +83,21 @@ def transform_source_to_target(source_path, target_path):
         var2 = ET.SubElement(imp, "var")
         var2.text = right
 
+    mapping_element = source_root.find(".//mapping")
+    for mapping in mapping_element.findall("goal"):
+        rule = SubElement(constraints, 'rule')
+        imp = SubElement(rule, 'imp')
+        var_goal = SubElement(imp, 'var')
+        var_goal.text = mapping.get('name')
+        var_feature = SubElement(imp, 'var')
+        var_feature.text = mapping.get('mappedFeature')
+
     # Saving file
     target_tree = ElementTree(target_root)
     target_tree.write(target_path, xml_declaration=True, encoding='utf-8', method="xml")
 
 # Applying the transformation
-source_path = 'input/test.xml'
+source_path = 'input/sourceGoodTime.xml'
 target_path = 'output/NewFM.xml'
 
 transform_source_to_target(source_path, target_path)
