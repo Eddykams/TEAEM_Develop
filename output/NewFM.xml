@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<featureModel><struct><and mandatory="true" name="Root"><graphics key="collapsed" value="false" /><and mandatory="true" name="Root1"><and mandatory="true" name="Nutrients">
+<featureModel><struct><and mandatory="true" name="Root"><graphics key="collapsed" value="false" /><and mandatory="true" name="Features"><and mandatory="true" name="Nutrients">
 				<feature name="Proteins" />
 			</and>
 			<alt mandatory="true" name="Food Preparation">
@@ -11,4 +11,4 @@
 					<feature mandatory="true" name="Couscous" />
 				</and>
 			</alt>
-		</and><and mandatory="true" name="Root2"><feature mandatory="true" name="Invite Alice" /><feature mandatory="true" name="Invite Bob" /><feature mandatory="true" name="Invite Charlie" /></and></and></struct><constraints><rule><imp><var>Dahl</var><var>Proteins</var></imp></rule><rule><imp><var>Carné</var><var>Proteins</var></imp></rule><rule><imp><var>Invite Alice</var><var>Vegan</var></imp></rule><rule><imp><var>Invite Bob</var><var>Proteins</var></imp></rule><rule><imp><var>Invite Charlie</var><var>Proteins</var></imp></rule></constraints></featureModel>
+		</and><and mandatory="true" name="Goals"><feature mandatory="true" name="Invite Alice" /><feature mandatory="true" name="Invite Bob" /><feature mandatory="true" name="Invite Charlie" /></and></and></struct><constraints><rule><imp><var>Dahl</var><var>Proteins</var></imp></rule><rule><imp><var>Carné</var><var>Proteins</var></imp></rule><rule><imp><var>Invite Alice</var><var>Vegan</var></imp></rule><rule><imp><var>Invite Bob</var><var>Proteins</var></imp></rule><rule><imp><var>Invite Charlie</var><var>Proteins</var></imp></rule></constraints></featureModel>
