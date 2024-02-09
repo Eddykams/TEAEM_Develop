@@ -29,21 +29,24 @@ def transform_source_to_target(source_path, target_path):
     # Creating 'struct' element : <struct>
     struct = SubElement(target_root, 'struct')
 
-    # Creating 'rootNode' element <and>
-    num_roots = 3
-    for i in range(num_roots):
-        name = f'Root{i}'  # Dynamically generate the name
-    first_and = SubElement(struct, 'and', attrib={'mandatory': 'true', 'name': name})
+    # Creating 'rootNode' element <and> 
+    for r in source_root.find('.//featureModel/'):
+        first_and = SubElement(struct, 'and', attrib={'mandatory': 'true', 'name': r.get('name')})
     #first_and = SubElement(struct, 'and', attrib={'mandatory': 'true', 'name':'Root'})
 
     # Assuming transformation rule: convert 'alt' to 'and' with additional sub-elements
+    num_roots = 2
+    for i in range(num_roots):
+        name = f'Root{i}'
+
     for alt in source_root.findall('.//featureModel/struct/*'):
         # Adding 'graphics' sub-element
         graphics = SubElement(first_and, 'graphics', attrib={'key': 'collapsed', 'value': 'false'})
 
         # Creating 'alt elemement' <alt>
-        alt_element = SubElement(first_and, 'alt', attrib=alt.attrib)
-        
+        #alt_element = SubElement(first_and, 'alt', attrib={'name': alt.get('name')+'1', 'mandatory': 'true' })
+        alt_element = SubElement(first_and, 'alt', attrib={'mandatory':alt.attrib.get('mandatory'),'name':alt.attrib.get('name')+'1'})
+
         # Copying sub-elements from 'alt' to 'and'
         for child in alt:
             alt_element.append(child)
@@ -52,7 +55,7 @@ def transform_source_to_target(source_path, target_path):
         # Adding additional 'and' element for goals
         ############ GOAL MODEL TRANSFORMATION
             ########################``
-        goals = SubElement(first_and, 'and', attrib={'mandatory': 'true', 'name': alt.get('name').replace('Feature', 'Goal')})
+        goals = SubElement(first_and, 'and', attrib={'mandatory': 'true', 'name': alt.get('name').replace('Feature', 'Goal')+'2'})
         
         for goal in source_root.findall('.//goals/*'):
             feature = SubElement(goals, 'feature', attrib={'mandatory': 'true', 'name': goal.get('name')})
@@ -80,7 +83,7 @@ def transform_source_to_target(source_path, target_path):
         var2 = ET.SubElement(imp, "var")
         var2.text = right
 
-    # Saving the transformed XML to target path
+    # Saving file
     target_tree = ElementTree(target_root)
     target_tree.write(target_path, xml_declaration=True, encoding='utf-8', method="xml")
 
@@ -91,4 +94,4 @@ target_path = 'output/NewFM.xml'
 transform_source_to_target(source_path, target_path)
 
 # Indicating the script has finished and where to find the output
-print(f"Transformation complete. The transformed XML is saved as {target_path}")
+print(f"Generation Reussie, Le fichier est enregistré : {target_path}")
