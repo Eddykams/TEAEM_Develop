@@ -63,7 +63,7 @@ def transform_source_to_target(source_path, target_path):
     ###############
         ############ PARCOURIR LES CONTRAINTES ET DEFINIR LES REGLES
             ########################
-    var_values = extract_var_values('input/sourceGoodTime.xml')
+    var_values = extract_var_values('input/test.xml')
     result = []
     print(var_values)  
 
@@ -88,7 +88,7 @@ def transform_source_to_target(source_path, target_path):
     target_tree.write(target_path, xml_declaration=True, encoding='utf-8', method="xml")
 
 # Applying the transformation
-source_path = 'input/sourceGoodTime.xml'
+source_path = 'input/test.xml'
 target_path = 'output/NewFM.xml'
 
 transform_source_to_target(source_path, target_path)
