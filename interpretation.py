@@ -70,7 +70,7 @@ def interpretation(data):
 ####
 if __name__ == "__main__":
     
-    jfichier = '/Users/eddykiomba/Documents/flaskdev/flaskr/results.json'  
+    jfichier = 'results.json'  
     data = load_json_file(jfichier)
     
     #Execution to find contradictory
