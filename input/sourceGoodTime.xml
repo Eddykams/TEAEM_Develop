@@ -14,7 +14,7 @@
     
     <featureModel>
 	<struct>
-		<and mandatory="true" name="Root">
+		<and mandatory="true" name="Root"> 
 			<and mandatory="true" name="Nutrients">
 				<feature name="Proteins"/>
 			</and>

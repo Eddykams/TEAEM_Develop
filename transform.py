@@ -45,7 +45,7 @@ def transform_source_to_target(source_path, target_path):
 
         # Creating 'alt elemement' <alt>
         #alt_element = SubElement(first_and, 'alt', attrib={'name': alt.get('name')+'1', 'mandatory': 'true' })
-        alt_element = SubElement(first_and, 'alt', attrib={'mandatory':alt.attrib.get('mandatory'),'name':alt.attrib.get('name')+'1'})
+        alt_element = SubElement(first_and, 'and', attrib={'mandatory':alt.attrib.get('mandatory'),'name':alt.attrib.get('name')+'1'})
 
         # Copying sub-elements from 'alt' to 'and'
         for child in alt:

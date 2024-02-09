@@ -103,7 +103,7 @@ if __name__ == "__main__":
     print("*****************")
     for recommendation in recommendations:
         print(recommendation)
-    print("To satisfy "+ contradictions[0] +" either "+ contradictions[1]+ " or " + contradictions[3] +" must be true, but not both (XOR logic).\n")
+    #print("To satisfy "+ contradictions[0] +" either "+ contradictions[1]+ " or " + contradictions[3] +" must be true, but not both (XOR logic).\n")
     
 
 
