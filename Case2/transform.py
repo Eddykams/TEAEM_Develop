@@ -55,7 +55,7 @@ def transform_source_to_target(source_path, target_path):
     ###############
         ############ PARCOURIR LES CONTRAINTES ET DEFINIR LES REGLES
             ########################
-    var_values = extract_var_values('input/bcmapping.xml')
+    var_values = extract_var_values('input/example2.xml')
     result = []
     print(var_values)  
 
@@ -72,7 +72,7 @@ def transform_source_to_target(source_path, target_path):
         imp = ET.SubElement(rule, "imp")
         var1 = ET.SubElement(imp, "var")
         var1.text = left
-        note = ET.SubElement(imp, "not")
+        note = ET.SubElement(imp, "not")   
         var2 = ET.SubElement(note, "var")
         var2.text = right
 
@@ -90,8 +90,8 @@ def transform_source_to_target(source_path, target_path):
     target_tree.write(target_path, xml_declaration=True, encoding='utf-8', method="xml")
 
 # Applying the transformation
-source_path = 'input/bcmapping.xml'
-target_path = 'output/Esystem.xml'
+source_path = 'input/example2.xml'
+target_path = 'output/Esystem2.xml'
 
 transform_source_to_target(source_path, target_path)
 

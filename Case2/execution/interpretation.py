@@ -41,9 +41,15 @@ def extraction_rules(reasons_string):
 # INTERPRETATION AND RECOMMANDATION
 ####
 def interpretation(data):
+    #featuress = [
+    #data["deadFeatureExplanation"]["Subject"]["Structure"]["LastChild"]["FirstChild"]["Feature"]["Name"],
+    #data["deadFeatureExplanation"]["Subject"]["Structure"]["LastChild"]["LastChild"]["Feature"]["Name"]
+    #]
     featuress = [
     data["deadFeatureExplanation"]["Subject"]["Structure"]["LastChild"]["FirstChild"]["Feature"]["Name"],
-    data["deadFeatureExplanation"]["Subject"]["Structure"]["LastChild"]["LastChild"]["Feature"]["Name"]
+    data["deadFeatureExplanation"]["Subject"]["Structure"]["LastChild"]["LastChild"]["Feature"]["Name"],
+    data["deadFeatureExplanation"]["Subject"]["Structure"]["FirstChild"]["FirstChild"]["FirstChild"]["Feature"]["Name"],
+    data["deadFeatureExplanation"]["Subject"]["Structure"]["FirstChild"]["FirstChild"]["LastChild"]["Feature"]["Name"]
     ]
     recommendations = []
 
@@ -91,10 +97,17 @@ if __name__ == "__main__":
     values_in_parentheses = extraction_rules(reasons)
     print("Rules:\n", values_in_parentheses)
     print("*********************************\n")
-    print("Recommandation : To Make Model Feasible, you need to one of the following action:")
+
+    #RECOMMANDATION
+    
+    print("Recommandation")
+    print("*****************\n")
+    print("To Make Model Feasible, you need to one of the following action:")
     print("****************************************************************")
     recommendations = interpretation(data)
     for recommendation in recommendations:
         print(recommendation)
     #print("To satisfy "+ contradictions[ +" either "+ contradictions[1]+ " or " + contradictions[3] +" must be true, but not both (XOR logic).\n")
     
+
+

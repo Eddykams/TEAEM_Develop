@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<struct>
+		<alt mandatory="true" name="FeatureA">
+			<graphics key="collapsed" value="false"/>
+			<feature mandatory="true" name="FeatureB"/>
+			<feature mandatory="true" name="FeatureC"/>
+		</alt>
+	</struct>
+</featureModel>
