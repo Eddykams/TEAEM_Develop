@@ -9,7 +9,7 @@ The folder is structured as follows:
 - Unified_Model: Folder containing our contribution, the unified model of the goal model, feature model, and logical constraints.
 
 #Execution:
-**./run.sh**
+- **./run.sh**
 The script run.sh contains three stages:
 
 - Transform.py: The creation of the unified feature model.
