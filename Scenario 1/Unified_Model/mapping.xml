@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+<goals name="Businesss Goals" type="AND" >  
+	<goal name="GDPR Compliance" />
+	<goal name="Auditability" /> 
+</goals>
+
+    <mapping>   
+			<goal name="Public Blockchain" mappedFeature="Auditability"></goal>
+            <goal name="Private Blockchain" mappedFeature="GDPR Compliance"></goal>
+    </mapping>
+
+<featureModel>
+	<struct>
+		<alt mandatory="true" name="Technical Solution">
+			<feature name="Private Blockchain"/>
+			<feature name="Public Blockchain"/>
+		</alt>
+	</struct>
+        <constraints>
+		<rule>
+			<imp>
+				<var>Private Blockchain</var>
+				<not>
+					<var>Auditability</var>
+				</not>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>Public Blockchain</var>
+				<not>
+					<var>GDPR Compliance</var>
+				</not>
+			</imp>
+		</rule>
+	</constraints>
+</featureModel>
+</configuration>

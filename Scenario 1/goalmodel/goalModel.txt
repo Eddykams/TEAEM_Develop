@@ -1,0 +1,73 @@
+{
+  "actors": [
+    {
+      "id": "81773c5d-594a-4f8a-8a9c-71d5f10cb19a",
+      "text": "Organization",
+      "type": "istar.Actor",
+      "x": 275,
+      "y": 159,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": [
+        {
+          "id": "115aec60-0b34-49a4-acca-d7b8819ae984",
+          "text": "Business Goals",
+          "type": "istar.Goal",
+          "x": 348,
+          "y": 209,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "738a1139-9a53-463b-b4d3-359debfe2a75",
+          "text": "GDPR Compiance",
+          "type": "istar.Goal",
+          "x": 275,
+          "y": 266,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "4470f029-b4fd-4daa-87e4-cc7342a10411",
+          "text": "Auditability",
+          "type": "istar.Goal",
+          "x": 415,
+          "y": 268,
+          "customProperties": {
+            "Description": ""
+          }
+        }
+      ]
+    }
+  ],
+  "orphans": [],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "4b57ca53-fa5d-48d6-9fa9-b60a3f6ed3e4",
+      "type": "istar.AndRefinementLink",
+      "source": "738a1139-9a53-463b-b4d3-359debfe2a75",
+      "target": "115aec60-0b34-49a4-acca-d7b8819ae984"
+    },
+    {
+      "id": "5880f5c9-d730-44c5-8ddc-5a30eb2b7c75",
+      "type": "istar.AndRefinementLink",
+      "source": "4470f029-b4fd-4daa-87e4-cc7342a10411",
+      "target": "115aec60-0b34-49a4-acca-d7b8819ae984"
+    }
+  ],
+  "display": {},
+  "tool": "pistar.2.1.0",
+  "istar": "2.0",
+  "saveDate": "Thu, 07 Mar 2024 09:21:30 GMT",
+  "diagram": {
+    "width": 1000,
+    "height": 700,
+    "customProperties": {
+      "Description": ""
+    }
+  }
+}

@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<featureModel><struct><and mandatory="true" name="Enterprise System"><graphics key="collapsed" value="false" /><alt mandatory="true" name="Technical Solution"><alt name="Private BC">
-				<feature name="Tezos" />
-				<feature name="Hyperledger" />
-			</alt>
-			<feature name="Public BC" />
-		</alt><and mandatory="true" name="BCFeatures"><feature mandatory="true" name="GDPR Compliance" /><feature mandatory="true" name="Auditability" /></and></and></struct><constraints><rule><imp><var>Private BC</var><not><var>Auditability</var></not></imp></rule><rule><imp><var>Public BC</var><not><var>GDPR Compliance</var></not></imp></rule></constraints></featureModel>

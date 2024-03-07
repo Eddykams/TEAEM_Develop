@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<struct>
+		<alt mandatory="true" name="Technical Solution">
+			<feature name="Private Blockchain">
+				<graphics key="collapsed" value="false"/>
+			</feature>
+			<feature name="Public Blockchain"/>
+		</alt>
+	</struct>
+</featureModel>

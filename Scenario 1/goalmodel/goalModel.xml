@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<struct>
+		<alt mandatory="true" name="Business Goals">
+			<feature name="GDPR Compliance">
+				<graphics key="collapsed" value="false"/>
+			</feature>
+			<feature name="Auditability"/>
+		</alt>
+	</struct>
+</featureModel>

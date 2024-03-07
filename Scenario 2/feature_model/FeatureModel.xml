@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<struct>
+		<alt mandatory="true" name="Technical Solution">
+			<graphics key="collapsed" value="false"/>
+			<alt name="Private Blockchain">
+				<feature name="Hyperledger"/>
+				<feature name="Tezos"/>
+			</alt>
+			<feature name="Public Blockchain"/>
+		</alt>
+	</struct>
+</featureModel>
